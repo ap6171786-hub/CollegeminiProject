@@ -1,0 +1,15 @@
+{
+  "name": "studyai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered notes summarizer, quiz generator, and flashcard maker for students.",
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "test": "npm test --prefix server",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
